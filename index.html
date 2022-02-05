@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./css//styles.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
     }
 
     ready(function () {
-      Scriptures.init(()=> {console.log("Initialized scriptures module")})
+      Scriptures.init(()=> {Scriptures.onHashChanged();})
       window.addEventListener("hashchange", Scriptures.onHashChanged)
     })
   </script>
