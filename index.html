@@ -30,6 +30,7 @@
 
     ready(function () {
       Scriptures.init(()=> {console.log("Initialized scriptures module")})
+      window.addEventListener("hashchange", Scriptures.onHashChanged)
     })
   </script>
 </body>
