@@ -271,3 +271,11 @@ span.verse {
 li.match {
   background-color: #ffffcc;
 }
+
+.pre-next {
+  padding: 3px;
+  color: blue;
+  border: solid 1px black;
+  margin: 0 2px;
+  cursor: pointer;
+}
